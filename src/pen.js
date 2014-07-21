@@ -172,7 +172,7 @@
           //hide menu
           that._menu.style.display = 'none';
         }
-      }, 200);
+      }, 0);
     };
 
     // toggle toolbar on mouse select
@@ -373,7 +373,7 @@
       menu.classList.toggle('pen-menu-below', false);
     }
 
-    menu.style.top = menuOffset.y + 'px';
+    menu.style.top = menuOffset.y - 5 + 'px';
     menu.style.left = menuOffset.x + 'px';
     return this;
   };
